@@ -43,7 +43,7 @@ if(!empty($input)){
 
     //use Mailgun\Mailgun;
 
-    $mgClient = new Mailgun\Mailgun('key-5f89cdfe4c5b44706264ade1f4226e23');
+    $mgClient = new Mailgun\Mailgun(MG_KEY);
     $domain = MG_DOMAIN;
 
     $result = $mgClient->sendMessage(
